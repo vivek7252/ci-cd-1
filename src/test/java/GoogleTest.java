@@ -9,7 +9,7 @@ public class GoogleTest {
   public void testUrl()
   {
     WebDriver driver=new ChromeDriver();
-
+// test
     driver.get("https://www.google.com");
     Assert.assertEquals("https://www.google.com/",driver.getCurrentUrl());
   }
