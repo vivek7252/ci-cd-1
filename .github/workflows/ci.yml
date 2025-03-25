@@ -1,9 +1,8 @@
 name: CI-CD Workflow
 
 on:
-  repository_dispatch:
-    types: [trigger-ci]  # Event type to match the one from source repo
-
+  workflow_call:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
