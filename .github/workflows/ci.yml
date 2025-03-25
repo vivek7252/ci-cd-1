@@ -2,7 +2,9 @@ name: CI-CD Workflow
 
 on:
   workflow_call:
-  
+    secrets:
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}  # Passing the secret to the called workflow
+
 jobs:
   build:
     runs-on: ubuntu-latest
