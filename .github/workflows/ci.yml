@@ -3,7 +3,7 @@ name: CI-CD Workflow
 on:
   workflow_call:
     secrets:
-      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}  # Passing the secret to the called workflow
+      GIT_TOKEN: ${{ secrets.GIT_TOKEN }}  # Pass the secret here
 
 jobs:
   build:
